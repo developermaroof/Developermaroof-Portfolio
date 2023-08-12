@@ -75,8 +75,9 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    High level experience in web design and knowledge, producing
-                    quality work.
+                    Web developer, with extensive knowledge and years of
+                    experience, working in web technologies and Ui / Ux Design,
+                    delivering quality work.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />

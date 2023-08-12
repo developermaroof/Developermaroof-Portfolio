@@ -105,9 +105,7 @@ nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
 }
-nav.navbar a.navbar-brand {
-  width: 9%;
-}
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
@@ -250,7 +248,87 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   color: white;
 }
+@media screen and (max-width: 990px) {
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-size: 16px;
+  }
+  .social-icon {
+    display: flex;
+  }
+  .social-icon a {
+    width: 40px;
+    height: 40px;
+  }
 
+  .social-icon a::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-icon a img {
+    width: 35%;
+  }
+
+  .navbar-text button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    margin-top: 1px;
+    font-size: 16px;
+  }
+
+  .social-icon {
+    display: flex;
+  }
+  .social-icon a {
+    width: 38px;
+    height: 38px;
+  }
+
+  .social-icon a::before {
+    width: 38px;
+    height: 38px;
+  }
+
+  .social-icon a img {
+    width: 35%;
+  }
+
+  .navbar-text button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    margin-top: 2px;
+    font-size: 15px;
+  }
+
+  .social-icon {
+    display: flex;
+  }
+  .social-icon a {
+    width: 35px;
+    height: 35px;
+  }
+
+  .social-icon a::before {
+    width: 35px;
+    height: 35px;
+  }
+
+  .social-icon a img {
+    width: 32%;
+  }
+
+  .navbar-text button {
+    font-size: 12px;
+  }
+}
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
@@ -323,6 +401,57 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+
+@media screen and (max-width: 990px) {
+  .banner .tagline {
+    font-size: 18px;
+  }
+  .banner h1 {
+    font-size: 55px;
+  }
+
+  .banner p {
+    font-size: 16px;
+  }
+
+  .banner button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .banner .tagline {
+    font-size: 18px;
+  }
+  .banner h1 {
+    font-size: 50px;
+  }
+
+  .banner p {
+    font-size: 16px;
+  }
+
+  .banner button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .banner .tagline {
+    font-size: 15px;
+  }
+  .banner h1 {
+    font-size: 41px;
+  }
+
+  .banner p {
+    font-size: 14px;
+  }
+
+  .banner button {
+    font-size: 15px;
+  }
 }
 
 /************ Skills Css ************/
