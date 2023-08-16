@@ -72,6 +72,65 @@ button {
   background-color: transparent;
 }
 
+/*==================== BUTTONS ====================*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button__icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: 0.3s;
+}
+
+.button--white {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button--white:hover {
+  background-color: var(--first-color);
+  color: #fff;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button--small {
+  padding: 0.75rem 1rem;
+}
+
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+.button--link:hover {
+  background-color: transparent;
+  color: var(--first-color-alt);
+}
+
+#button-github {
+  background-color: transparent;
+  border: 1px solid var(--first-color-alt);
+  color: var(--first-color-alt);
+  margin-left: 10px;
+}
+
+/* --------- Button End --------- */
+
 input:focus,
 textarea:focus,
 select:focus {
@@ -514,6 +573,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
+
+.project__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.project__info-title {
+  font-size: 17px;
+  font-weight: 700;
+
+  color: white;
+}
+
+.project__info-name {
+  font-size: 18px;
+  color: #b8b8b8;
+}
+
+.project__info-title,
+.project__info-name {
+  display: block;
+  text-align: center;
+}
+
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -522,7 +606,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 100%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
