@@ -8,22 +8,36 @@ export const ProjectCard = ({ title, description, live, github, imgUrl }) => {
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{description}</span>
+
           <a
             href={live}
             target="_blank"
             class="button button--flex button--small portfolio__button"
           >
-            Visit
+            <span
+              style={{
+                fontSize: 15,
+                fontWeight: 500,
+              }}
+            >
+              Visit
+            </span>
             <i class="uil uil-arrow-right button__icon"></i>
           </a>
 
           <a
             target="_blank"
             href={github}
-            id="button-github"
             class="button button--flex button--small portfolio__button"
           >
-            GitHub
+            <span
+              style={{
+                fontSize: 15,
+                fontWeight: 500,
+              }}
+            >
+              GitHub
+            </span>
             <i class="uil uil-arrow-right button__icon"></i>
           </a>
         </div>

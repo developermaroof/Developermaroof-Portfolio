@@ -74,32 +74,47 @@ button {
 
 /*==================== BUTTONS ====================*/
 .button {
-  display: inline-block;
-  background-color: var(--first-color);
-  color: #fff;
+  background-color: white;
+  color: black;
   padding: 1rem;
   border-radius: 0.5rem;
-  font-weight: var(--font-medium);
+  font-weight: 700;
+  font-size: 18px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: black;
+  color: white;
 }
 
-.button__icon {
+.button span {
+  z-index: 1;
+  position: relative;
+}
+
+.button::before {
+  content: "";
+  background: #121212;
+  border-radius: 0.5rem;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.button:hover::before {
+  width: 100%;
+}
+
+/* .button__icon {
   font-size: 1.25rem;
-  margin-left: var(--mb-0-5);
+  margin-left: 0.5rem;
   transition: 0.3s;
-}
-
-.button--white {
-  background-color: #fff;
-  color: var(--first-color);
-}
-
-.button--white:hover {
-  background-color: var(--first-color);
-  color: #fff;
 }
 
 .button--flex {
@@ -109,25 +124,7 @@ button {
 
 .button--small {
   padding: 0.75rem 1rem;
-}
-
-.button--link {
-  padding: 0;
-  background-color: transparent;
-  color: var(--first-color);
-}
-
-.button--link:hover {
-  background-color: transparent;
-  color: var(--first-color-alt);
-}
-
-#button-github {
-  background-color: transparent;
-  border: 1px solid var(--first-color-alt);
-  color: var(--first-color-alt);
-  margin-left: 10px;
-}
+} */
 
 /* --------- Button End --------- */
 
@@ -672,12 +669,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-txtx {
   position: absolute;
   text-align: center;
+
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  border: 2px solid red;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
@@ -695,6 +694,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 15px;
   letter-spacing: 0.8px;
 }
+.proj-txtx a {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: space-between;
+  width: 7rem;
+}
+
+.portfolio__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+
 .background-image-right {
   top: 20%;
   position: absolute;
