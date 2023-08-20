@@ -111,7 +111,7 @@ button {
   width: 100%;
 }
 
-/* .button__icon {
+.button__icon {
   font-size: 1.25rem;
   margin-left: 0.5rem;
   transition: 0.3s;
@@ -124,7 +124,7 @@ button {
 
 .button--small {
   padding: 0.75rem 1rem;
-} */
+}
 
 /* --------- Button End --------- */
 
@@ -676,7 +676,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
-  border: 2px solid red;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
@@ -694,12 +693,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 15px;
   letter-spacing: 0.8px;
 }
-.proj-txtx a {
+
+.button-div {
+  width: 300px;
+  margin-top: 1rem;
+  padding-left: 3rem;
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
   justify-content: space-between;
-  width: 7rem;
+}
+
+.button-div a {
+  margin-left: 1rem;
 }
 
 .portfolio__button:hover .button__icon {
@@ -715,7 +720,55 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 766px) {
+  .proj-txtx h4 {
+    font-size: 1.5rem;
+  }
+  .proj-txtx span {
+    font-size: 0.8rem;
+  }
+  .button-div a {
+    margin-left: 0;
+    margin-right: 5px;
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .button-div a {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 546px) {
+  .button-div a {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .button-div a {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .button-div a {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .button-div a {
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+}
+
+/************ Projects Css End ************/
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
   padding: 60px 0 200px 0;
@@ -765,6 +818,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
+  margin-left: 38%;
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
@@ -789,6 +843,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .contact form button {
+    margin-left: 33%;
+  }
 }
 
 /************ Footer Css ************/

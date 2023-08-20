@@ -9,37 +9,39 @@ export const ProjectCard = ({ title, description, live, github, imgUrl }) => {
           <h4>{title}</h4>
           <span>{description}</span>
 
-          <a
-            href={live}
-            target="_blank"
-            class="button button--flex button--small portfolio__button"
-          >
-            <span
-              style={{
-                fontSize: 15,
-                fontWeight: 500,
-              }}
+          <div className="button-div">
+            <a
+              href={live}
+              target="_blank"
+              class="button button--flex button--small portfolio__button"
             >
-              Visit
-            </span>
-            <i class="uil uil-arrow-right button__icon"></i>
-          </a>
+              <span
+                style={{
+                  fontSize: 15,
+                  fontWeight: 500,
+                }}
+              >
+                Visit
+              </span>
+              <i class="uil uil-arrow-right button__icon"></i>
+            </a>
 
-          <a
-            target="_blank"
-            href={github}
-            class="button button--flex button--small portfolio__button"
-          >
-            <span
-              style={{
-                fontSize: 15,
-                fontWeight: 500,
-              }}
+            <a
+              target="_blank"
+              href={github}
+              class="button button--flex button--small portfolio__button"
             >
-              GitHub
-            </span>
-            <i class="uil uil-arrow-right button__icon"></i>
-          </a>
+              <span
+                style={{
+                  fontSize: 15,
+                  fontWeight: 500,
+                }}
+              >
+                GitHub
+              </span>
+              <i class="uil uil-arrow-right button__icon"></i>
+            </a>
+          </div>
         </div>
       </div>
     </Col>
