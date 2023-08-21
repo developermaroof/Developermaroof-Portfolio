@@ -704,7 +704,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .button-div a {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 .portfolio__button:hover .button__icon {
@@ -721,6 +721,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @media screen and (max-width: 990px) {
+  .proj-txtx h4 {
+    font-size: 1.3rem;
+  }
+  .proj-txtx span {
+    font-size: 0.7rem;
+  }
+  .button-div {
+    padding: 0 0 0 0;
+
+    justify-content: start;
+  }
+  .button-div a {
+    width: 85px;
+    height: auto;
+
+    line-height: 0.2em !important;
+  }
+  .button-div .visit {
+    margin: 8px;
+  }
+  .button-div .github {
+    width: 110px;
+  }
 }
 
 @media screen and (max-width: 766px) {
@@ -730,41 +753,40 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .proj-txtx span {
     font-size: 0.8rem;
   }
+  .button-div {
+    padding: 0 0 0 2px;
+    justify-content: start;
+  }
   .button-div a {
-    margin-left: 0;
-    margin-right: 5px;
-    background-color: red;
+    width: 90px;
+    height: auto;
+  }
+  .button-div .github {
+    width: 110px;
   }
 }
 
-@media screen and (max-width: 576px) {
-  .button-div a {
-    margin-left: 80px;
-  }
-}
-
-@media screen and (max-width: 546px) {
-  .button-div a {
-    margin-left: 60px;
-  }
-}
-
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 575px) {
   .button-div a {
     margin-left: 50px;
   }
 }
 
-@media screen and (max-width: 432px) {
+@media screen and (max-width: 518px) {
   .button-div a {
-    margin-left: 10px;
+    margin-left: 100px;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 481px) {
   .button-div a {
-    margin-right: 10px;
-    margin-left: 0px;
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .button-div a {
+    margin-left: 50px;
   }
 }
 

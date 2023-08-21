@@ -13,7 +13,7 @@ export const ProjectCard = ({ title, description, live, github, imgUrl }) => {
             <a
               href={live}
               target="_blank"
-              class="button button--flex button--small portfolio__button"
+              class="button button--flex button--small portfolio__button visit"
             >
               <span
                 style={{
@@ -29,7 +29,7 @@ export const ProjectCard = ({ title, description, live, github, imgUrl }) => {
             <a
               target="_blank"
               href={github}
-              class="button button--flex button--small portfolio__button"
+              class="button button--flex button--small portfolio__button github"
             >
               <span
                 style={{
