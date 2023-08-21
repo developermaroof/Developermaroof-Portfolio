@@ -720,13 +720,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-@media screen and (max-width: 990px) {
-  .proj-txtx h4 {
-    font-size: 1.3rem;
-  }
-  .proj-txtx span {
-    font-size: 0.7rem;
-  }
+@media screen and (max-width: 1200px) {
   .button-div {
     padding: 0 0 0 0;
 
@@ -735,14 +729,42 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .button-div a {
     width: 85px;
     height: auto;
+    margin-left: 30px;
 
     line-height: 0.2em !important;
   }
   .button-div .visit {
-    margin: 8px;
+    margin: 0 18px;
   }
   .button-div .github {
     width: 110px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .proj-txtx h4 {
+    font-size: 1.3rem;
+  }
+  .proj-txtx span {
+    font-size: 0.7rem;
+  }
+  .button-div {
+    display: flex;
+    align-items: center;
+  }
+  .button-div a {
+    width: 85px;
+    height: auto;
+
+    line-height: 0.2em !important;
+  }
+  .button-div .visit {
+    margin-left: 5px;
+    margin-right: 0;
+  }
+  .button-div .github {
+    width: 110px;
+    margin-left: 10px;
   }
 }
 
@@ -761,32 +783,76 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 90px;
     height: auto;
   }
+  .button-div .visit {
+    margin-left: 16px;
+  }
   .button-div .github {
     width: 110px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  .button-div a {
-    margin-left: 50px;
+  .proj-txtx h4 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .proj-txtx span {
+    font-size: 1rem;
+  }
+  .button-div .visit {
+    margin-left: 150px;
+  }
+  .button-div .github {
+    width: 110px;
+    margin-left: 40px;
   }
 }
 
-@media screen and (max-width: 518px) {
-  .button-div a {
+@media screen and (max-width: 550px) {
+  .button-div .visit {
+    margin-left: 140px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .button-div .visit {
+    margin-left: 120px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .button-div .visit {
     margin-left: 100px;
   }
 }
 
-@media screen and (max-width: 481px) {
-  .button-div a {
-    margin-left: 70px;
+@media screen and (max-width: 435px) {
+  .proj-txtx h4 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .proj-txtx span {
+    font-size: 0.9rem;
+  }
+  .button-div .visit {
+    margin-left: 80px;
   }
 }
-
-@media screen and (max-width: 410px) {
-  .button-div a {
-    margin-left: 50px;
+@media screen and (max-width: 400px) {
+  .button-div .visit {
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .proj-txtx h4 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+  .proj-txtx span {
+    font-size: 0.8rem;
+  }
+  .button-div .visit {
+    margin-left: 40px;
   }
 }
 
@@ -876,10 +942,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
+  /* margin-top: 1px; */
   background-image: url("./assets/img/footer-bg.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.footer .text-center {
+  margin-top: 20px;
 }
 
 .footer img {
@@ -891,4 +962,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 990px) {
+  .footer .social-icon {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer p {
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footer .maroof {
+    align-items: center;
+    justify-content: center;
+  }
 }
