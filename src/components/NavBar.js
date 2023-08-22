@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import linkedIn from "../assets/img/linkedIn.svg";
+import facebook from "../assets/img/facebook.svg";
+import instagram from "../assets/img/instagram.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -77,19 +77,19 @@ export const NavBar = () => {
                   target="_blank"
                   href="https://www.linkedin.com/in/developermaroof/"
                 >
-                  <img src={navIcon1} alt="linkedinIcon" />
+                  <img src={linkedIn} alt="linkedinIcon" />
                 </a>
                 <a
                   target="_blank"
                   href="https://www.facebook.com/developermaroofpage/"
                 >
-                  <img src={navIcon2} alt="facebookIcon" />
+                  <img src={facebook} alt="facebookIcon" />
                 </a>
                 <a
                   target="_blank"
                   href="https://www.instagram.com/developer_maroof/"
                 >
-                  <img src={navIcon3} alt="instagramIcon" />
+                  <img src={instagram} alt="instagramIcon" />
                 </a>
               </div>
               <HashLink to="#connect">

@@ -123,7 +123,7 @@ button {
 }
 
 .button--small {
-  padding: 0.75rem 1rem;
+  padding: 0.8rem 1rem;
 }
 
 /* --------- Button End --------- */
@@ -650,7 +650,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
+  border-radius: 15px;
   overflow: hidden;
   margin-bottom: 24px;
 }
@@ -682,7 +682,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 1;
 }
 .proj-txtx h4 {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
@@ -690,21 +690,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 0.8px;
 }
 
 .button-div {
   width: 300px;
   margin-top: 1rem;
+  margin-left: 6rem;
   padding-left: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.button-div a {
-  /* margin-left: 1rem; */
 }
 
 .portfolio__button:hover .button__icon {
@@ -721,20 +718,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @media screen and (max-width: 1200px) {
-  .button-div {
-    padding: 0 0 0 0;
+  .proj-txtx h4 {
+    font-size: 30px;
+  }
+  .proj-txtx span {
+    font-size: 15px;
+  }
+  .button--small {
+    padding: 0.8rem 1rem;
+  }
 
+  .button-div {
+    margin-left: 5rem;
+    padding: 0 0 0 0;
     justify-content: start;
   }
   .button-div a {
     width: 85px;
     height: auto;
     margin-left: 30px;
-
     line-height: 0.2em !important;
   }
   .button-div .visit {
-    margin: 0 18px;
+    margin-left: 40px;
   }
   .button-div .github {
     width: 110px;
@@ -743,40 +749,50 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 @media screen and (max-width: 991px) {
   .proj-txtx h4 {
-    font-size: 1.3rem;
+    margin-top: 10px;
+    font-size: 2rem;
   }
   .proj-txtx span {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+  }
+  .button--small {
+    padding: 0.7rem 1rem;
   }
   .button-div {
     display: flex;
     align-items: center;
+    margin-left: 4rem;
   }
   .button-div a {
     width: 85px;
     height: auto;
-
     line-height: 0.2em !important;
   }
   .button-div .visit {
-    margin-left: 5px;
+    margin-left: 0;
     margin-right: 0;
   }
   .button-div .github {
     width: 110px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 }
 
 @media screen and (max-width: 766px) {
   .proj-txtx h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .proj-txtx span {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+  .button--small {
+    padding: 0.5rem 0.8rem;
   }
   .button-div {
-    padding: 0 0 0 2px;
+    margin-top: 5px;
+    margin-left: 0;
+    margin-bottom: 10px;
+
     justify-content: start;
   }
   .button-div a {
@@ -798,6 +814,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   .proj-txtx span {
     font-size: 1rem;
+  }
+  .button--small {
+    padding: 0.8rem 1rem;
+  }
+  .button-div {
+    margin-top: 20px;
   }
   .button-div .visit {
     margin-left: 150px;
@@ -850,6 +872,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   .proj-txtx span {
     font-size: 0.8rem;
+  }
+  .button--small {
+    padding: 0.6rem 1rem;
+  }
+  .button-div {
+    margin-top: 10px;
   }
   .button-div .visit {
     margin-left: 40px;
