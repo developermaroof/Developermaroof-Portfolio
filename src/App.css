@@ -843,6 +843,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @media screen and (max-width: 490px) {
+  .proj-txtx h4 {
+    font-size: 2rem;
+  }
   .button-div .visit {
     margin-left: 100px;
   }
