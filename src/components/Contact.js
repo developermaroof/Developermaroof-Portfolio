@@ -2,34 +2,37 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import emailjs from 'emailjs-com';
-
+import emailjs from "emailjs-com";
 
 export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-
-    emailjs.init('Fdw9Lui_H7KZO3dgw');
+    emailjs.init("Fdw9Lui_H7KZO3dgw");
 
     const form = e.target;
     const name = form.name.value;
     const email = form.email.value;
     const message = form.message.value;
+    const replyTo = form.email.value;
 
     try {
-      const response = await emailjs.send('service_nrv7msg', 'template_sni5m3m', {
-        from_name: name,
-        to_email: email,
-        message: message,
-      });
-      console.log('SUCCESS!', response.status, response.text);
-      alert('Your message has been sent!');
+      const response = await emailjs.send(
+        "service_nrv7msg",
+        "template_sni5m3m",
+        {
+          from_name: name,
+          to_email: email,
+          message: message,
+          reply_to: replyTo,
+        }
+      );
+      console.log("SUCCESS!", response.status, response.text);
+      alert("Your message has been sent!");
     } catch (error) {
-      console.log('FAILED...', error, error.text);
+      console.log("FAILED...", error, error.text);
     }
   };
-
 
   return (
     <section className="contact" id="connect">
@@ -60,11 +63,7 @@ export const Contact = () => {
                   <form onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
-                        <input
-                          type="text"
-                          name="name"
-                          placeholder="Name"
-                        />
+                        <input type="text" name="name" placeholder="Name" />
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input
@@ -83,7 +82,6 @@ export const Contact = () => {
                           <span>Send</span>
                         </button>
                       </Col>
-
                     </Row>
                   </form>
                 </div>
