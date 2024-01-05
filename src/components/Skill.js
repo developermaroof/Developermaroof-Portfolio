@@ -5,6 +5,7 @@ import react from "../assets/img/skills/react.svg";
 import bootstrap from "../assets/img/skills/bootstrap.svg";
 import sass from "../assets/img/skills/sass.svg";
 import tailwind from "../assets/img/skills/tailwind.svg";
+import firebase from "../assets/img/skills/firebase.png";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -61,6 +62,10 @@ export const Skills = () => {
                 <div className="item">
                   <img src={react} alt="Image" />
                   <h5>React</h5>
+                </div>
+                <div className="item">
+                  <img src={firebase} alt="Image" />
+                  <h5>Firebase</h5>
                 </div>
                 <div className="item">
                   <img src={bootstrap} alt="Image" />

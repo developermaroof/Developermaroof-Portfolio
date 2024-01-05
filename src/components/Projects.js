@@ -104,7 +104,7 @@ export const Projects = () => {
                   <p>Most recent work</p>
                   <div class="project__info">
                     <div>
-                      <span class="project__info-title">01</span>
+                      <span class="project__info-title">02</span>
                       <span class="project__info-name">
                         Year <br />
                         experience
@@ -112,7 +112,7 @@ export const Projects = () => {
                     </div>
 
                     <div>
-                      <span class="project__info-title">50+</span>
+                      <span class="project__info-title">60+</span>
                       <span class="project__info-name">
                         Completed <br />
                         projects
