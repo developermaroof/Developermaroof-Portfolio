@@ -7,6 +7,7 @@ import GPT from "../assets/img/projects/ReactGPT3.PNG";
 import AdminDashboard from "../assets/img/projects/ReactAdminDashboard.PNG";
 import TodoList from "../assets/img/projects/Todo List.PNG";
 import RecipeApp from "../assets/img/projects/Food Recipe.PNG";
+import ChatApp from "../assets/img/projects/ChatApp.PNG";
 import HairStudio from "../assets/img/projects/Hair-Studio.PNG";
 import WeatherApp from "../assets/img/projects/Live Weather.PNG";
 import Ecommerce from "../assets/img/projects/E-commerce.PNG";
@@ -64,6 +65,13 @@ export const Projects = () => {
       live: "https://worldfoodrecipes.netlify.app/",
       github: "https://github.com/developermaroof/Project-FoodRecipeApp",
       imgUrl: RecipeApp,
+    },
+    {
+      title: "Chat App",
+      description: "ReactJS , SASS , Firebase",
+      live: "https://developerslivechat.netlify.app/",
+      github: "https://github.com/developermaroof/Project-livechat",
+      imgUrl: ChatApp,
     },
     {
       title: "Hair Studio",
