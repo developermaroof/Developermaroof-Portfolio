@@ -6,11 +6,12 @@ import bootstrap from "../assets/img/skills/bootstrap.svg";
 import sass from "../assets/img/skills/sass.svg";
 import tailwind from "../assets/img/skills/tailwind.svg";
 import firebase from "../assets/img/skills/firebase.png";
+import redux from "../assets/img/skills/redux.svg";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+// import arrow1 from "../assets/img/arrow1.svg";
+// import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
@@ -48,43 +49,51 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={html} alt="Image" />
+                  <img src={html} alt="htmlImage" />
                   <h5>HTML</h5>
                 </div>
                 <div className="item">
-                  <img src={css} alt="Image" />
+                  <img src={css} alt="cssImage" />
                   <h5>CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={javascript} alt="Image" />
+                  <img src={javascript} alt="javascriptImage" />
                   <h5>JavaScript</h5>
                 </div>
                 <div className="item">
-                  <img src={react} alt="Image" />
+                  <img src={react} alt="reactImage" />
                   <h5>React</h5>
                 </div>
                 <div className="item">
-                  <img src={firebase} alt="Image" />
+                  <img src={firebase} alt="firebaseImage" />
                   <h5>Firebase</h5>
                 </div>
                 <div className="item">
-                  <img src={bootstrap} alt="Image" />
+                  <img src={bootstrap} alt="bootstrapImage" />
                   <h5>BootStrap</h5>
                 </div>
                 <div className="item">
-                  <img src={sass} alt="Image" />
+                  <img src={sass} alt="sassImage" />
                   <h5>Sass</h5>
                 </div>
                 <div className="item">
-                  <img src={tailwind} alt="Image" />
+                  <img src={tailwind} alt="tailwindImage" />
                   <h5>Tailwind CSS</h5>
+                </div>
+                <div className="item">
+                  <img src={redux} alt="reduxImage" />
+                  <h5>Redux</h5>
                 </div>
               </Carousel>
             </div>
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      <img
+        className="background-image-left"
+        src={colorSharp}
+        alt="colorSharpImage"
+      />
     </section>
   );
 };
