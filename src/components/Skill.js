@@ -7,6 +7,7 @@ import sass from "../assets/img/skills/sass.svg";
 import tailwind from "../assets/img/skills/tailwind.svg";
 import firebase from "../assets/img/skills/firebase.png";
 import redux from "../assets/img/skills/redux.svg";
+import typescript from "../assets/img/skills/typescript.svg";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -83,6 +84,10 @@ export const Skills = () => {
                 <div className="item">
                   <img src={redux} alt="reduxImage" />
                   <h5>Redux</h5>
+                </div>
+                <div className="item">
+                  <img src={typescript} alt="typescriptImage" />
+                  <h5>TypeScript</h5>
                 </div>
               </Carousel>
             </div>
