@@ -32,7 +32,7 @@ export const Footer = () => {
                 <img src={instagram} alt="instagramIcon" />
               </a>
             </div>
-            <p>&copy; developer_maroof. All Rights Reserved</p>
+            <p>&copy; developermaroof. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>

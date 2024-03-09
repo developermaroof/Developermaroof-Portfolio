@@ -120,7 +120,7 @@ export const Projects = () => {
                     </div>
 
                     <div>
-                      <span class="project__info-title">60+</span>
+                      <span class="project__info-title">65+</span>
                       <span class="project__info-name">
                         Completed <br />
                         projects
@@ -160,7 +160,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt=""></img>
     </section>
   );
 };
