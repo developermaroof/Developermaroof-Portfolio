@@ -120,7 +120,7 @@ export const Projects = () => {
                     </div>
 
                     <div>
-                      <span class="project__info-title">65+</span>
+                      <span class="project__info-title">70+</span>
                       <span class="project__info-name">
                         Completed <br />
                         projects
